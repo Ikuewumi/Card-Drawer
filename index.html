@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="style.css">
+   <title>Drawer</title>
+</head>
+<body>
+   <div class="card">
+      <div class="content">
+         <header>
+            <h2>SOMEONE FAMOUS</h2>
+            <p>Creative Developer</p>
+         </header>
+         <main>
+            <div class="imgBox">
+               <img src="./bg.jpg" alt="image-box">
+            </div>
+
+            <a href="#" class="btn">Hire Me!</a>
+         </main>
+      </div>
+      <div class="toggle">
+         <svg viewBox="0 0 26 26">
+            <path d="M6.414063 7.585938L3.585938 10.414063L13 19.828125L22.414063 10.414063L19.585938 7.585938L13 14.171875Z" />
+          </svg>
+      </div>
+   </div>
+
+   <script>
+      const toggleBtn = document.querySelector('div.toggle')
+      const card = document.querySelector('div.card')
+
+      toggleBtn.onclick = () => {
+         card.classList.toggle('open')
+      }
+   </script>
+</body>
+</html>
